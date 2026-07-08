@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leiden Deco - Carrito de compras</title>
+        <!-- icono -->
+    <link rel="icon" type="image/x-icon" href="img/logo_leiden.ico">
+    <!-- estilos -->
+    <link rel="stylesheet" href="../style.css">
+    <!-- fontawesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- ==================== HEADER ==================== -->
+    <!-- Barra de navegación fija en la parte superior -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="../index.html">
+                    <img class="logo" src="../img/logo1.jpeg" alt="logo principal">
+                </a>
+            </div>
+            <div class="menu-container">
+                <ul id="navbar" class="menu">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../pages/tienda.html">TIENDA</a></li>  <!-- target="_blank" NO es ideal para navegación interna del mismo sitio -->
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">NOSOTROS</a></li>
+                    <li><a href="../pages/contacto.html">CONTACTO</a></li>
+
+                    <div class="carrito">
+                        <li>
+                            <!-- Ícono del carrito de compras -->
+                            <a href="./pages/carrito.html">
+                                <i class="fa fa-shopping-bag" aria-hidden="true"></i> <!-- Icono del carrito de compras de Font Awesome -->
+                            </a>
+                        </li>
+                    </div>
+
+                    <!-- close button para cerrar el menú visible en versión mobile -->
+                    <a href="#" id="close" class="close">
+                        <i class="fa fa-times" aria-hidden="true"></i> <!-- muestra un icono de una "X" (cerrar) o similar, dependiendo de la versión de Font Awesome -->
+                    </a>
+                </ul>
+            </div>
+        <!-- version responsive mobile: ícono hamburguesa + shopping bag -->
+            <div class="mobile">
+                <i id="bar" class="fas fa-outdent"></i> <!-- elemento "hamburguesa" linkeado de FontAwesome -->
+                <a href="./pages/carrito.html">
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <p>Carrito en construcción <br>Disculpe las molestias</p>
+
+    <footer class="footer">
+        <div class="">
+            <h3 class="enc-datos">Contacto<span class="datos"><br>Dirección:<br>Teléfono:<br></span></h3>
+            <h3 class="enc-datos">Seguinos en las redes</h3>
+            <div class="icono">
+                <a href="https://web.whatsapp.com/" target="_blank">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/leiden.deco" target="_blank">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <div>
+            <h3 class="enc-datos">Mi cuenta<span class="datos"><br>Ver carrito<br>Mis favoritos<br>Seguimiento de Pedido<br>Ayuda<br></span></h3>
+        </div>
+        <div class="col install">
+            <h4>Descargá la App</h4>
+            <p>Desde App Store o Google Play</p>
+            <div class="row">
+                <img src="../img/app.jpg" alt="App Store">
+                <img src="../img/play.jpg" alt="Google Play">
+            </div>
+            <p>Pasarelas de pago seguras</p>
+            <img src="../img/pay.png" alt="Métodos de Pago">
+        </div>
+        <div class="copyright">
+            <p>© 2026, Leiden Deco | Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="../script/index.js"></script>
+</body>
+</html>
