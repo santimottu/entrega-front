@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leiden Deco</title>
+    <!-- icono -->
+    <link rel="icon" type="image/x-icon" href="img/logo_leiden.ico">
+    <!-- estilos -->
+    <link rel="stylesheet" href="style.css">
+    <!-- fontawesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- ==================== HEADER ==================== -->
+    <!-- Barra de navegación fija en la parte superior -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">
+                    <img class="logo" src="img/logo1.jpeg" alt="logo principal">
+                </a>
+            </div>
+            <div class="menu-container">
+                <ul id="navbar" class="menu">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="pages/tienda.html">TIENDA</a></li>  <!-- target="_blank" NO es ideal para navegación interna del mismo sitio -->
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">NOSOTROS</a></li>
+                    <li><a href="pages/contacto.html">CONTACTO</a></li>
+                    <div class="carrito">
+                        <li>
+                            <!-- Ícono del carrito de compras -->
+                            <a href="./pages/carrito.html">
+                                <i class="fa fa-shopping-bag" aria-hidden="true"></i> <!-- Icono del carrito de compras de Font Awesome -->
+                            </a>
+                        </li>
+                    </div>
+                    <!-- close button para cerrar el menú visible en versión mobile -->
+                    <a href="#" id="close" class="close">
+                        <i class="fa fa-times" aria-hidden="true"></i> <!-- muestra un icono de una "X" (cerrar) o similar, dependiendo de la versión de Font Awesome -->
+                    </a>
+                </ul>
+            </div>
+        <!-- version responsive mobile: ícono hamburguesa + shopping bag -->
+            <div class="mobile">
+                <i id="bar" class="fas fa-outdent"></i> <!-- elemento "hamburguesa" linkeado de FontAwesome -->
+                <a href="./pages/carrito.html">
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Sección de BIENVENIDA -->
+        <section class="introduccion">
+            <div class="introduccion-content">
+                <h2>Bienvenidos a nuestra tienda</h2>
+                <p class="tags">
+                    <span class="tag">VELAS</span>
+                    <span class="tag">VELONES</span>
+                    <span class="tag">DIFUSORES</span>
+                    <span class="tag">HOME SPRAY</span>
+                    <span class="tag">FLOREROS</span>
+                    <span class="tag">JABONES</span>
+                    <span class="tag">ACCESORIOS</span>
+                </p>
+                <button id="btn">Ver productos</button>
+                <!--<img src="img/Jabon_liquido.jpeg" alt="imagen de bienvenida">--> <!-- probar desde css con los distintos background -->
+            </div>
+        </section>
+
+        <!-- Sección de tarjetas de PRODUCTO usando Flexbox -->
+        <section class="recursos">
+            <h1>&#x2B50 Destacados del mes &#x2B50</h1> <!-- Código hexadecimal del emoji -->
+            <p class="texto-recursos">Encontrá los mejores productos para decorar tu hogar</p>
+            <div class="tarjetas">
+                <div class="tarjeta tarjeta-uno">
+                    <img class="destacado" src="img/Florero_Pretoria_Black.jpeg">
+                    <h2 class="card-name">Pretoria Black</h2>
+                    <p class="card-producto">Florero</p>
+                    <p class="card-precio">$24.200</p>
+                    <button class="btn-compra">Comprar</button>
+                </div>
+                <div class="tarjeta tarjeta-dos">
+                    <img class="destacado" src="img/Difusor Matt Black.jpeg">
+                    <h2 class="card-name">Matt Black</h2>
+                    <p class="card-producto">Difusor</p>
+                    <p class="card-precio">$14.900</p>
+                    <button class="btn-compra">Comprar</button>
+                </div>
+                <div class="tarjeta tarjeta-tres">
+                    <img class="destacado" src="img/Jabon_liquido.jpeg">
+                    <h2 class="card-name">Leiden soap</h2>
+                    <p class="card-producto">Jabón líquido</p>
+                    <p class="card-precio">$8.700</p>
+                    <button class="btn-compra">Comprar</button>
+                </div>
+                <!-- Card de producto -->
+                <div class="tarjeta tarjeta-uno">
+                    <img class="destacado" src="img/VELA-GLASGOW.JPEG" alt="Vela de soja">
+                    <div class="#">
+                        <span class="card-name">Glasgow</span>
+                        <h5 class="card-producto">Vela de soja</h5>
+                        <h4 class="card-precio">$12.900</h4>
+                    </div>
+                    <a href="#" class="btn-compra"
+                        data-nombre="Glasgow"
+                        data-precio="$12.900"
+                        data-imagen="/img/VELA-GLASGOW.JPEG">
+                        <i class="fal fa-shopping-cart"></i> Agregar
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- BANNER de publicidad y promociones especiales -->
+        <section class="banner">
+            <img class="banner-img" src="img/velas/Vela-Breda_31.jpeg" alt="">
+            <div class="banner-txt">
+                <h2>Transformá tus ambientes en espacios únicos con detalles que hacen la diferencia.</h2>
+                <h3>Diseñamos ambientes que inspiran, pensando en cada rincón de tu hogar.</h3>
+            </div>
+        </section>
+
+        <!-- ==================== RESEÑAS ==================== -->
+        <!-- Sección de opiniones de clientes usando CSS Grid (3 columnas) -->
+        <section class="section-resenias section-p1 section-m1">
+            <h2>Lo que dicen nuestros clientes</h2>
+            <p>Opiniones reales de compradores verificados</p>
+            <div class="resenias-container">
+
+                <div class="resenia-card">
+                    <div class="resenia-estrellas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Excelente calidad y llegó en tiempo récord. El producto superó mis expectativas. ¡Volvería a comprar sin dudarlo!"</p>
+                    <div class="resenia-autor">
+                        <img src="img/1.png" alt="Carlos R.">
+                        <div>
+                            <h5>Carlos R.</h5>
+                            <span>Buenos Aires</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resenia-card">
+                    <div class="resenia-estrellas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <p>"Muy buena atención al cliente y productos de primera. El proceso de compra fue muy sencillo e intuitivo."</p>
+                    <div class="resenia-autor">
+                        <img src="img/3.png" alt="Laura M.">
+                        <div>
+                            <h5>Laura M.</h5>
+                            <span>Córdoba</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resenia-card">
+                    <div class="resenia-estrellas">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Los precios son increíbles y la variedad de productos es enorme. Encontré todo lo que buscaba en un solo lugar."</p>
+                    <div class="resenia-autor">
+                        <img src="img/2.png" alt="Valentin S.">
+                        <div>
+                            <h5>Valentin S.</h5>
+                            <span>Rosario</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Formulario de suscripción a NEWSLETTER -->
+        <section class="#">
+            <div class="newsletter">
+                <p>SUSCRIBITE AL NEWSLETTER<br><span class="news">Recibí novedades de nuestra tienda y <span class="promo">promociones exclusivas</span></span></p>
+                <form id="boton" action="" method="post">
+                    <label for="email"></label>
+                    <input type="email" id="email" placeholder="Ingresa tu correo electrónico">
+                    <input type="submit" class="btn-news">
+                    <!-- <button class="" type="submit">Sign Up</button> --> <!-- alternativa de botón -->              
+                    <p id="mensaje"></p> <!-- mensaje de Java Script -->
+                </form>
+            </div>
+        </section>
+
+        <!-- TOAST -->
+         <div id="toast" class="toast-custom">
+            <span id="toastMensaje"></span>
+            <button id="btnCerrarToast">X</button>
+         </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="">
+            <h3 class="enc-datos">Contacto<span class="datos"><br>Dirección:<br>Teléfono:<br></span></h3>
+            <h3 class="enc-datos">Seguinos en las redes</h3>
+            <div class="icono">
+                <a href="https://web.whatsapp.com/" target="_blank">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/leiden.deco" target="_blank">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <div>
+            <h3 class="enc-datos">Mi cuenta<span class="datos"><br>Ver carrito<br>Mis favoritos<br>Seguimiento de Pedido<br>Ayuda<br></span></h3>
+        </div>
+        <div class="col install">
+            <h4>Descargá la App</h4>
+            <p>Desde App Store o Google Play</p>
+            <div class="row">
+                <img src="img/app.jpg" alt="App Store">
+                <img src="img/play.jpg" alt="Google Play">
+            </div>
+            <p>Pasarelas de pago seguras</p>
+            <img src="img/pay.png" alt="Métodos de Pago">
+        </div>
+        <div class="copyright">
+            <p>© 2026, Leiden Deco | Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="script/index.js"></script> <!-- link al archivo .js, en la ultima etiqueta del body -->
+    <script src="script/toast.js"></script>
+</body>
+</html>

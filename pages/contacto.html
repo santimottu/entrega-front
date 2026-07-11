@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <title>Leiden - Contacto</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="../index.html">
+                <img class="logo" src="../img/logo1.jpeg" alt="logo principal">
+            </a>
+            <div class="menu-container">
+                <ul id="navbar" class="menu">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="../pages/tienda.html">TIENDA</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">NOSOTROS</a></li>
+                    <li><a href="https://www.google.com.ar">Ir a Google</a></li>
+                    <div class="carrito">
+                        <li>
+                            <a href="../pages/carrito.html">
+                                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </div>
+                    <!-- close button para cerrar el menú visible en versión mobile -->
+                    <a href="#" id="close" class="close">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </a>
+                </ul>
+            </div>
+            <!-- version responsive mobile: ícono hamburguesa + shopping bag -->
+            <div class="mobile">
+                <i id="bar" class="fas fa-outdent"></i>
+                <a href="./pages/carrito.html">
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="contacto">
+            <h1>DEJANOS TU MENSAJE</h1>
+            <h2>Queremos saber de vos</h2>
+            <form action="">  <!-- atributo action="" envía los datos a la misma página. Si se omite, el efecto es el mismo -->
+                <label for="nombre"></label>
+                <input type="text" placeholder="Tu nombre" >
+                <label for="email"></label>
+                <input type="email" placeholder="Tu correo electónico">
+                <label for="texto"></label>
+                <textarea name="" id="" placeholder="Tu mensaje"></textarea>
+                <input type="submit" class="btn-news">
+            </form>
+        </div>
+        <div class="ubicacion">
+            <h2>¿ Dónde encontrarnos ?</h2>
+            <h3>Visitanos en nuestro local en Buenos Aires</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26268.643024575147!2d-58.37775218623047!3d-34.61477100736113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac630121623%3A0x53386f2ac88991a9!2sTeatro%20Col%C3%B3n!5e0!3m2!1ses!2sar!4v1775601632412!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </main>
+<footer class="footer">
+        <div class="">
+            <h3 class="enc-datos">Contacto<span class="datos"><br>Dirección:<br>Teléfono:<br></span></h3>
+            <h3 class="enc-datos">Seguinos en las redes</h3>
+            <div class="icono">
+                <a href="https://web.whatsapp.com/" target="_blank">
+                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/leiden.deco" target="_blank">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+        <div>
+            <h3 class="enc-datos">Mi cuenta<span class="datos"><br>Ver carrito<br>Mis favoritos<br>Seguimiento de Pedido<br>Ayuda<br></span></h3>
+        </div>
+        <div class="col install">
+            <h4>Descargá la App</h4>
+            <p>Desde App Store o Google Play</p>
+            <div class="row">
+                <img src="../img/app.jpg" alt="App Store">
+                <img src="../img/play.jpg" alt="Google Play">
+            </div>
+            <p>Pasarelas de pago seguras</p>
+            <img src="../img/pay.png" alt="Métodos de Pago">
+        </div>
+        <div class="copyright">
+            <p>© 2026, Leiden Deco | Todos los derechos reservados</p>
+        </div>
+    </footer>
+    <script src="../script/index.js"></script>
+</body>
+</html>
